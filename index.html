@@ -9,8 +9,6 @@
     <link rel="stylesheet" media= "screen and (min-width: 1100px)" href="css/widescreen.css">
     <link rel="stylesheet" media= "screen and (max-width: 768px) " href="css/mobile.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="./js/main.js"></script>
     
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
@@ -136,7 +134,24 @@
         <div id="map"></div>
     </div>
     
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDLekcJv5SUx-78g908jVm73Vjw53u_F8&callback=initMap"></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoieHB5cm9zaCIsImEiOiJja2NyOHR6c3QwbHJiMnVtcXhjYWNrc29iIn0.Z4oA7UYLhtA2PqO31pK8Uw';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        center: [-79.41, 43.70],
+        zoom: 10,
+        style: 'mapbox://styles/mapbox/streets-v11'
+        });
+
+
+
+        var marker = new mapboxgl.Marker()
+        .setLngLat([-79.41, 43.70])
+        .addTo(map); // add the marker to the map
+    </script>
+
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDLekcJv5SUx-78g908jVm73Vjw53u_F8&callback=initMap"></script> -->
 
       
 </body>
