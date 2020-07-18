@@ -134,6 +134,12 @@
         <div id="map"></div>
     </div>
     
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+        <div class="container">
+            <p>Copywright &copy; 2020, The Traveler, All Rights Reserved</p>
+        </div>
+    </footer>
 
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoieHB5cm9zaCIsImEiOiJja2NyOHR6c3QwbHJiMnVtcXhjYWNrc29iIn0.Z4oA7UYLhtA2PqO31pK8Uw';
@@ -143,16 +149,10 @@
         zoom: 10,
         style: 'mapbox://styles/mapbox/streets-v11'
         });
-
-
-
         var marker = new mapboxgl.Marker()
         .setLngLat([-79.41, 43.70])
         .addTo(map); // add the marker to the map
     </script>
-
-    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDLekcJv5SUx-78g908jVm73Vjw53u_F8&callback=initMap"></script> -->
-
       
 </body>
 </html>

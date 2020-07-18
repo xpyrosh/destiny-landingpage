@@ -1,9 +1,11 @@
+// Not Using Google Maps API 
+
 function initMap() {
     // The location of Toronto
     var toronto = {lat: 45.653, lng: 79.383};
     // The map, centered at Toronto
     var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 4, center: toronto});
+        document.querySelector('map'), {zoom: 4, center: toronto});
     // The marker, positioned at Toronto
     var marker = new google.maps.Marker({position: toronto, map: map});
   }
