@@ -10,7 +10,7 @@ function initMap() {
     var marker = new google.maps.Marker({position: toronto, map: map});
   }
   
-
+// JQuery Scroll
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("#navbar a, .btn").on('click', function(event) {
