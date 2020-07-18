@@ -42,6 +42,11 @@ p {
     color: #fff;
 }
 
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
+
 .l-heading {
     font-size: 4rem;
     margin-bottom: .75rem;
@@ -240,3 +245,26 @@ p {
     width: 60%;
     opacity: 85%;
 }
+
+/* Section: Contact */
+#contact {
+    display: flex;
+}
+
+#contact #map, #contact .contact-form{
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: .75rem 0;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input, #contact .contact-form textarea {
+    width: 100%;
+    padding: .5rem;
+}
+
