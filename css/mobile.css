@@ -14,3 +14,58 @@
     align-self: center;
     margin-bottom: 0;
 }
+
+/* Smart Phones */
+@media(max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo {
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+
+    #navbar ul {
+        padding: .5rem;
+    }
+
+    #who {
+        display: block;
+    }
+
+    #who .who-img {
+        display: none;
+    }
+
+    #clients .items img {
+        width: 80%;
+    }
+
+    #clients .items div:last-child {
+        display: none;
+    }
+
+    #contact {
+        display: block;    }
+
+    #contact #map {
+        height: 250px;
+        border-top: 1px solid #444;
+    }
+}
+
+@media(max-height: 568px){
+    #showcase.showcase-content {
+        margin-top: -2rem;
+    }
+
+    #l-heading {
+        font-size: 3rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}

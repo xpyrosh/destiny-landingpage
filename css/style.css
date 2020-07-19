@@ -166,6 +166,7 @@ p {
 /* Showcase */
 
 #showcase {
+    position: relative;
     background: #444 url('../img/showcase.jpg') no-repeat center center/cover;
     
     /* cover the whole viewport */
@@ -190,7 +191,7 @@ p {
 
     /* Overlay */
     position: absolute;
-    top:65px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
@@ -227,6 +228,7 @@ p {
 
 #who div {
     flex: 1;
+    flex-basis: 50%;
 }
 
 #who .who-img {
@@ -253,6 +255,11 @@ p {
 
 #contact #map, #contact .contact-form{
     flex: 1;
+    flex-basis: 50%;
+}
+
+#contact #map {
+    background: #333;
 }
 
 #contact .contact-form .form-group {
